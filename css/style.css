@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+a,
+p {
+  font-size: 14px;
+}
+
+.button__modal {
+  width: 50px;
+  height: 50px;
+  margin-left: 50%;
+  margin-top: 100px;
+}
+
+.button__modal img {
+  width: 50px;
+}
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+  color: #fff;
+}
+
+.modalDialog:target {
+  display: block;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+.modalDialog > div {
+  max-width: 70%;
+  height: auto;
+  position: relative;
+  margin: 10% auto;
+  padding: 50px;
+  background-color: #252525;
+  text-align: center;
+  font-size: 25px;
+}
+
+.close {
+  color: #fff;
+  line-height: 55px;
+  position: absolute;
+  right: 12px;
+  text-align: center;
+  top: 12px;
+  border-radius: 12px;
+  font-size: 30px;
+}
+
+.close:hover {
+  color: #fff;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 150ms;
+          animation-duration: 150ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+.span-title {
+  color: #18b353;
+}
+
+.color {
+  color: #fff;
+}
+
+.modal__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.img {
+  width: 8%;
+  height: auto;
+  padding: 10px 5px;
+}
+
+.img:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.icon {
+  width: 50%;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-img1 {
+  width: 80%;
+}
+
+#code {
+  margin-top: 50px;
+  resize: none;
+}
+
+input {
+  width: 70%;
+  border: none;
+  border: 1px solid #8a8987;
+  background-color: Transparent;
+  padding: 10px 5px;
+}
+
+button {
+  max-width: 270px;
+  max-height: 200px;
+  border: 2px solid #58cb1d;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 10px 8px;
+  margin-left: -7px;
+}
+
+button:hover {
+  background-color: #58cb1d;
+}
+
+.bloc-item {
+  margin-top: 20px;
+}
